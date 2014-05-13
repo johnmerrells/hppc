@@ -2,6 +2,8 @@ package com.carrotsearch.hppc;
 
 import java.util.*;
 
+import java.io.Serializable;
+
 import com.carrotsearch.hppc.cursors.*;
 import com.carrotsearch.hppc.hash.MurmurHash3;
 import com.carrotsearch.hppc.predicates.*;
@@ -66,7 +68,7 @@ import static com.carrotsearch.hppc.HashContainerUtils.*;
  */
 /*! ${TemplateOptions.generatedAnnotation} !*/
 public class KTypeVTypeOpenHashMap<KType, VType>
-    implements KTypeVTypeMap<KType, VType>, Cloneable
+    implements KTypeVTypeMap<KType, VType>, Cloneable, Serializable
 {
     /**
      * Minimum capacity for the map.
